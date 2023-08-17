@@ -20,7 +20,8 @@ public:
             
     }
     int smallestDivisor(vector<int>& nums, int threshold) {
-        int low=1,high=*max_element(nums.begin(),nums.end());
+        int low=1;
+        int high=*max_element(nums.begin(),nums.end());
         if(nums.size()==1)
         {
             return ceil((double)nums[0]/(double)threshold);
