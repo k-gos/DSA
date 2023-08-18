@@ -12,6 +12,6 @@ public:
                 high = mid - 1;
             }
         }
-        return high + k + 1;
+        return high + k + 1; //high+1=low at the end
     }
 };
