@@ -8,7 +8,6 @@ public:
            if(s[i]!=ans[ans.length()-1])
            {
                ans.push_back(s[i]);
-              
            }
             else
             {
