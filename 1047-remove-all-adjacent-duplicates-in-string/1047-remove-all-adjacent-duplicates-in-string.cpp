@@ -3,7 +3,7 @@ public:
     string removeDuplicates(string s) {
         int l=s.length();
         string ans=" ";
-        int j=0;
+        
         for(int i=0;i<l;i++)
         {
            if(s[i]!=ans[ans.length()-1])
