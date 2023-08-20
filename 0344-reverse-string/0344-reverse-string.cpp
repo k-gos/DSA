@@ -6,8 +6,8 @@ public:
         while(i<=j)
         {
             swap(s[i],s[j]);
-            j--;
             i++;
+            j--;
         }
     }
 };
