@@ -3,19 +3,7 @@ public:
     bool isVowel(char ch)
     {
         ch=tolower(ch);
-        char vow[]={'a','e','i','o','u'};
-        int l=0,h=4;
-        while(l<=h)
-        {
-            int mid=(l+h)/2;
-            if(vow[mid]==ch)
-                return true;
-            else if(vow[mid]>ch)
-                h=mid-1;
-            else
-                l=mid+1;
-        }
-        return false;
+       return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
         
     }
     string reverseVowels(string s) {
