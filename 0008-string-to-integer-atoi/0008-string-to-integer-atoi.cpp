@@ -8,7 +8,7 @@ public:
         }
         if(i<s.size()&&s[i]=='-'||s[i]=='+'){
             sign=s[i]=='+'?1:-1;
-            ++i;
+            i++;
         }
         
         while(i<s.size()&&isdigit(s[i]))
@@ -18,7 +18,7 @@ public:
                 return sign ==-1?INT_MIN:INT_MAX;
             }
             ans=ans*10+(s[i]-'0');
-            ++i;
+            i++;
         }
         return ans*sign;
     }
