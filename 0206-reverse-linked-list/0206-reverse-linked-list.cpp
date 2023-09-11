@@ -10,15 +10,24 @@
  */
 class Solution {
 public:
+    
+    void InsertAtHead(ListNode* &head, int data)
+    {
+        ListNode* newnode= new ListNode(data);
+        newnode->next=head;
+        head=newnode;
+    }
     ListNode* reverseList(ListNode* head) {
-        ListNode* prev = nullptr;
-        ListNode* current = head;
-        while (current != nullptr) {
-        ListNode* next = current->next;
-        current->next = prev;
-        prev = current;
-        current = next;
+        if(head==NULL)
+            return head;
+        ListNode* temp= new ListNode(head->val);
+        head=head->next;
+        while(head!=nullptr)
+        {
+            InsertAtHead(temp, head->val);
+            head=head->next;
         }
-        return prev;
+        return temp;
+        
     }
 };
